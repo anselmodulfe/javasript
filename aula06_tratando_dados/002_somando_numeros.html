@@ -21,11 +21,22 @@
     <p>Já me livrei da maldição!!</p>
     <script>
         var n1 = Number(window.prompt('Digite um número:'))// converte string em  número
-        var n2 = Number.parseInt(window.prompt('Digite mais um número:'))
+        var n2 = Number.parseInt(window.prompt('Estes valores sáo strings mas serão convertidos em number........Digite mais um número:'))
         var s = n1+n2
-        window.alert('A soma de ' + n1 + ' mais ' + n2 +' é igual a ' + s)
+        window.alert('A soma de ' + n1 + ' mais ' + n2 +' é igual a ' + String(s) + '... -Obs: aqui o resultado foi convertido em String')
         //(number + number) retorna uma soma
         //(string + string) concatena
+
+        
+        var s = 'JavaScript'
+        document.write('Eu estou estudando s <br>' )       //..Não faz interpolação- aspas simples
+        document.write('Eu estou estudando ' + s + '<br>')     //..Usa cancatenaçãp-  aspas simples
+        document.write(`Eu estou estudando ${s} `)     //..Usa template String-  crase
+        /*
+        s.length // retorna quantos caracteres tem a string
+        s.toUpperCase() // converte a string em "MAIÚSCULAS"
+        s.toLowerCase()  // converte a string em "minúsculas"
+        */
     </script>
 </body>
 </html>

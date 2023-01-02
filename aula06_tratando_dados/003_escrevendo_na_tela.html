@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escrevendo na tela</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font: normal 20pt arial; 
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <script>
+        var nome = window.prompt('Qual o seu nome:')
+        document.write(`Olá, ${nome}!<br>Seu nome tem <strong>${nome.length}</strong> letras.<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br><br>`)
+
+        var n1 = Number(window.prompt('Digite um valor:'))
+        document.write(`Você digitou : ${n1}<br> `)
+        document.write(`Com duas casas decimais fica: ${n1.toFixed(2)}<br>`)
+        document.write(`Exibindo como moeda brasileira: ${n1.toLocaleString('pt-br',{style: 'currency', currency:'BRL'})}<br>`)
+        document.write(`Exibindo como dolar fica: ${n1.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})}<br>`)
+        document.write(`Exibindo como euro fica: ${n1.toLocaleString('pt-br',  {style: 'currency', currency: 'EUR'})}`)
+    </script>
+</body>
+</html>
